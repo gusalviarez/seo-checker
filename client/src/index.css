@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+  background: #444;
+
+  font-size: 2rem;
+}
+
+.title {
+  color: #eee;
+}
+
+.input {
+  background: #eee;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+.button {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background: #eee;
+}
