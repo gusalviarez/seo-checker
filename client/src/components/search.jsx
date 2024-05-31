@@ -14,9 +14,9 @@ const Search = () => {
   }
 
   return (
-    <form className="input-container" onSubmit={handleSubmit}>
-      <input className="input" type="text" />
-      <button className="button">Search</button>
+    <form className="search-container" onSubmit={handleSubmit}>
+      <input className="search-input" type="text" />
+      <button className="search-button">Search</button>
     </form>
   );
 }
