@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Search = () => {
 
+  const navigate = useNavigate(); // Get navigation function
   const [data, setData] = useState("")
 
   const handleSubmit = (e) => {
@@ -11,6 +13,10 @@ const Search = () => {
 
     // Clear the input field
     e.currentTarget[0].value = ""
+
+    // Redirect to the desired route using navigate
+    navigate('/result'); // Replace '/new-route' with your actual route path
+
   }
 
   return (
