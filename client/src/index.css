@@ -248,7 +248,7 @@ body {
 
 .result-container {
   width: 100%;
-  height: 150vh;
+  height: 140vh;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -263,7 +263,7 @@ body {
 }
 
 .result-bar {
-  width: 70%;
+  width: 55%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -290,13 +290,44 @@ body {
   padding: 5px;
 }
 
-.performance-container{
-  width: 70%;
+.performance-container {
+  width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 }
+
+.performance-progress {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .performance-title {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
+}
+
+.performance-ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+
+.performance-li {
+  width: 30%;
+  display: flex;
+}
+
+.performance-ul > #li1 {
+  color: red;
+}
+
+.performance-ul > #li2 {
+  color: yellow;
+}
+
+.performance-ul > #li3 {
+  color: green;
 }

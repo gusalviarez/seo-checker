@@ -1,6 +1,9 @@
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import screenShot from '../../public/screen.png';
+import screenShot from '/screen.png';
+import { MdErrorOutline } from "react-icons/md";
+import { BiError } from "react-icons/bi";
+import { FaCheckDouble } from "react-icons/fa";
 
 const Result = () => {
   const percentage = 30;
@@ -31,9 +34,22 @@ const Result = () => {
         </a>
       </div>
       <div className='performance-container'>
-        <div>
+        <div className='performance-progress'>
           <h2 className='performance-title'>Performance</h2>
           <CircularProgressbar value={percentage} text={`${percentage}%`} />
+          <ul className='performance-ul'>
+            <li className='performance-li' id='li1'>
+              <MdErrorOutline />
+              0 - 49
+            </li>
+            <li className='performance-li' id='li2'>
+              <BiError />
+              50 - 89
+            </li>
+            <li className='performance-li' id='li3'>
+              <FaCheckDouble />
+              90 - 100</li>
+          </ul>
         </div>
         <img className='screenshot-img' alt="screenShot of the url page" src={screenShot} />
       </div>
