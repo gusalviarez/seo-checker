@@ -24,7 +24,7 @@ const Result = () => {
           <span>Accesibility</span>
         </a>
         <a className='progress-container' href='./'>
-          <CircularProgressbar value={percentage3} text={`${percentage3}%`} />
+          <CircularProgressbar value={percentage} text={`${percentage}%`} />
           <span>Best practices</span>
 
         </a>
@@ -36,7 +36,9 @@ const Result = () => {
       <div className='performance-container'>
         <div className='performance-progress'>
           <h2 className='performance-title'>Performance</h2>
-          <CircularProgressbar value={percentage} text={`${percentage}%`} />
+          <div className='progress-bar--container'>
+            <CircularProgressbar value={percentage} text={`${percentage}%`} />
+          </div>
           <ul className='performance-ul'>
             <li className='performance-li' id='li1'>
               <MdErrorOutline />
@@ -51,7 +53,48 @@ const Result = () => {
               90 - 100</li>
           </ul>
         </div>
-        <img className='screenshot-img' alt="screenShot of the url page" src={screenShot} />
+      </div>
+      <div className='performance-container'>
+        <div className='performance-progress'>
+          <h2 className='performance-title'>Performance</h2>
+          <div className='progress-bar--container'>
+            <CircularProgressbar value={percentage} text={`${percentage}%`} />
+          </div>
+          <ul className='performance-ul'>
+            <li className='performance-li' id='li1'>
+              <MdErrorOutline />
+              0 - 49
+            </li>
+            <li className='performance-li' id='li2'>
+              <BiError />
+              50 - 89
+            </li>
+            <li className='performance-li' id='li3'>
+              <FaCheckDouble />
+              90 - 100</li>
+          </ul>
+        </div>
+      </div>
+      <div className='performance-container'>
+        <div className='performance-progress'>
+          <h2 className='performance-title'>Performance</h2>
+          <div className='progress-bar--container'>
+            <CircularProgressbar value={percentage} text={`${percentage}%`} />
+          </div>
+          <ul className='performance-ul'>
+            <li className='performance-li' id='li1'>
+              <MdErrorOutline />
+              0 - 49
+            </li>
+            <li className='performance-li' id='li2'>
+              <BiError />
+              50 - 89
+            </li>
+            <li className='performance-li' id='li3'>
+              <FaCheckDouble />
+              90 - 100</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
